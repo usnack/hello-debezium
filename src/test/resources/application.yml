@@ -1,0 +1,23 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/inventory
+    username: mysqluser
+    password: mysqlpw
+
+---
+spring:
+  config:
+    activate:
+      on-profile: oracle
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/ORCLPDB1
+    username: debezium
+    password: dbz
+  jpa:
+    generate-ddl: true
