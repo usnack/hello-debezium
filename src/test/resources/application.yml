@@ -1,3 +1,8 @@
+logging:
+  level:
+    root: info
+    com.hello.debezium: debug
+
 ---
 spring:
   config:
@@ -21,3 +26,5 @@ spring:
     password: dbz
   jpa:
     generate-ddl: true
+#    database: oracle
+#    database-platform: org.hibernate.dialect.OracleDialect

@@ -2,8 +2,6 @@ package com.hello.debezium.embed;
 
 import com.hello.debezium.share.entity.Member;
 import com.hello.debezium.share.repository.MemberRepository;
-import io.debezium.connector.mysql.MySqlConnector;
-import io.debezium.connector.oracle.OracleConnector;
 import io.debezium.engine.ChangeEvent;
 import io.debezium.engine.DebeziumEngine;
 import io.debezium.engine.format.Json;
@@ -14,10 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -25,6 +20,7 @@ import java.util.concurrent.Executors;
 @SpringBootTest
 @ActiveProfiles("oracle")
 class OracleTest {
+    //
     @Autowired
     MemberRepository memberRepository;
 
