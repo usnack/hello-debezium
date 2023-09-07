@@ -33,21 +33,22 @@ import java.util.concurrent.TimeUnit;
 @Testcontainers
 @ActiveProfiles("oracle")
 class OracleContainerTest {
-    /*
-    docker run -it --rm \
-        --name oracle \
-        -p 1521:1521 \
-        -e ORACLE_PWD=top_secret \
-        oracle/database:19.3.0-ee-logminer
-     */
-    @Container
-    static OracleContainer oracleContainer = new OracleContainer(DockerImageName.parse("oracle/database:19.3.0-ee-logminer")
-            .asCompatibleSubstituteFor("gvenzl/oracle-xe"))
+    static class Constants {
+        static final String LOGMINER_USER = "c##logminer";
+        static final String LOGMINER_PWD = "logminer";
+    }
 
+    @Container
+    static OracleContainer oracleContainer = new OracleContainer(DockerImageName.parse("amis-registry.kr.ncr.ntruss.com/oracle/database:19.3.0-ee-logminer-fast")
+            .asCompatibleSubstituteFor("gvenzl/oracle-xe"))
             .withExposedPorts(1521)
-            .withEnv("ORACLE_PWD", "top_secret");
+            .withEnv("ORACLE_PWD", "1234")
+            .withEnv("LOGMINER_USER", Constants.LOGMINER_USER)
+            .withEnv("LOGMINER_PWD", Constants.LOGMINER_PWD);
     @DynamicPropertySource
     static void properties(DynamicPropertyRegistry registry) {
+        registry.add("spring.datasource.url", () -> String.format("jdbc:oracle:thin:@localhost:%s/ORCLPDB1", oracleContainer.getMappedPort(1521)));
+        registry.add("spring.datasource.url", () -> String.format("jdbc:oracle:thin:@localhost:%s/ORCLPDB1", oracleContainer.getMappedPort(1521)));
         registry.add("spring.datasource.url", () -> String.format("jdbc:oracle:thin:@localhost:%s/ORCLPDB1", oracleContainer.getMappedPort(1521)));
     }
     //
@@ -60,6 +61,9 @@ class OracleContainerTest {
         final Properties props = new Properties();
         props.load(new FileInputStream(new File(String.join(File.separator, "src", "test", "resources", "embed", "oracle.properties"))));
         props.setProperty("database.port", oracleContainer.getMappedPort(1521).toString());
+        props.setProperty("database.user", Constants.LOGMINER_USER);
+        props.setProperty("database.password", Constants.LOGMINER_PWD);
+
         CountDownLatch countDownLatch = new CountDownLatch(2);
         try {
             ExecutorService executor = Executors.newSingleThreadExecutor();
