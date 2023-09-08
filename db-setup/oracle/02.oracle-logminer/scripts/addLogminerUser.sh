@@ -1,10 +1,12 @@
 #!/bin/sh
 
 echo ""
-echo "========================================================"
-echo "================= TRY ADD LOGMINER USER ==================="
-echo "========================================================"
-echo ""
+echo "#####################################################################"
+echo "##########              START [ADD LOGMINER USER]          ##########"
+echo "#####################################################################"
+
+
+
 
 while getopts "u:p:" var
 do
@@ -14,14 +16,16 @@ do
    esac
 done
 
+echo ""
+echo "++++++++++++ VARIABLE LIST ++++++++++++"
 
-echo ""
-echo "++++++++++++ ENV List ++++++++++++"
-echo "+++ ORACLE_PWD : ${ORACLE_PWD}"
-echo "+++ NEW_LOGMINER_USER : ${NEW_LOGMINER_USER}"
-echo "+++ NEW_LOGMINER_PWD : ${NEW_LOGMINER_PWD}"
-echo "++++++++++++++++++++++++++++++++++"
-echo ""
+echo "+ CONFIGURED"
+echo "+-- ORACLE_PWD : ${ORACLE_PWD}"
+echo "+-- NEW_LOGMINER_USER : ${NEW_LOGMINER_USER}"
+echo "+-- NEW_LOGMINER_PWD : ${NEW_LOGMINER_PWD}"
+
+echo "+++++++++++++++++++++++++++++++++++++++"
+
 
 sqlplus sys/${ORACLE_PWD} as sysdba <<- EOF
   CREATE USER ${NEW_LOGMINER_USER} IDENTIFIED BY ${NEW_LOGMINER_PWD} DEFAULT TABLESPACE LOGMINER_TBS QUOTA UNLIMITED ON LOGMINER_TBS CONTAINER=ALL;
@@ -53,7 +57,6 @@ sqlplus sys/${ORACLE_PWD} as sysdba <<- EOF
 EOF
 
 echo ""
-echo "========================================================"
-echo "================= DONE ADD LOGMINER USER ==============="
-echo "========================================================"
-echo ""
+echo "#####################################################################"
+echo "##########              FINISH [ADD LOGMINER USER]         ##########"
+echo "#####################################################################"

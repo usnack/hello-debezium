@@ -1,22 +1,23 @@
 #!/bin/sh
 
 echo ""
-echo "========================================================"
-echo "================= TRY LOGMINER SETUP ==================="
-echo "========================================================"
-echo ""
+echo "#####################################################################"
+echo "##########              START [LOGMINER SETUP]             ##########"
+echo "#####################################################################"
 
 echo ""
-echo "++++++++++++ ENV List ++++++++++++"
+echo "++++++++++++ VARIABLE LIST ++++++++++++"
+
+echo "+ FIXED"
 export ORACLE_SID=ORCLCDB
-echo "+++ [FIXED] ORACLE_SID : ${ORACLE_SID}"
+echo "+-- ORACLE_SID : ${ORACLE_SID}"
 export ORACLE_PDB=ORCLPDB1
-echo "+++ [FIXED] ORACLE_PDB : ${ORACLE_PDB}"
-echo "+++ [CONFIGURED] ORACLE_PWD : ${ORACLE_PWD}"
-echo "++++++++++++++++++++++++++++++++++"
-echo ""
+echo "+-- ORACLE_PDB : ${ORACLE_PDB}"
 
+echo "+ CONFIGURED"
+echo "+-- ORACLE_PWD : ${ORACLE_PWD}"
 
+echo "+++++++++++++++++++++++++++++++++++++++"
 
 mkdir -p /opt/oracle/oradata/recovery_area
 
@@ -53,8 +54,8 @@ sqlplus sys/${ORACLE_PWD} as sysdba <<- EOF
   exit;
 EOF
 
+
 echo ""
-echo "========================================================"
-echo "================= DONE LOGMINER SETUP =================="
-echo "========================================================"
-echo ""
+echo "#####################################################################"
+echo "##########              FINISH [LOGMINER SETUP]            ##########"
+echo "#####################################################################"
