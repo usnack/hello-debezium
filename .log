@@ -1,0 +1,4610 @@
+ORACLE EDITION: ENTERPRISE
+
+LSNRCTL for Linux: Version 19.0.0.0.0 - Production on 08-SEP-2023 06:52:15
+
+Copyright (c) 1991, 2019, Oracle.  All rights reserved.
+
+Starting /opt/oracle/product/19c/dbhome_1/bin/tnslsnr: please wait...
+
+TNSLSNR for Linux: Version 19.0.0.0.0 - Production
+System parameter file is /opt/oracle/product/19c/dbhome_1/network/admin/listener.ora
+Log messages written to /opt/oracle/diag/tnslsnr/eff04aa307d2/listener/alert/log.xml
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1)))
+Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+
+Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=IPC)(KEY=EXTPROC1)))
+STATUS of the LISTENER
+------------------------
+Alias                     LISTENER
+Version                   TNSLSNR for Linux: Version 19.0.0.0.0 - Production
+Start Date                08-SEP-2023 06:52:16
+Uptime                    0 days 0 hr. 0 min. 0 sec
+Trace Level               off
+Security                  ON: Local OS Authentication
+SNMP                      OFF
+Listener Parameter File   /opt/oracle/product/19c/dbhome_1/network/admin/listener.ora
+Listener Log File         /opt/oracle/diag/tnslsnr/eff04aa307d2/listener/alert/log.xml
+Listening Endpoints Summary...
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=ipc)(KEY=EXTPROC1)))
+  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=0.0.0.0)(PORT=1521)))
+The listener supports no services
+The command completed successfully
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Fri Sep 8 06:52:16 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Connected to an idle instance.
+
+SQL> ORACLE instance started.
+
+Total System Global Area 2483023888 bytes
+Fixed Size		    9138192 bytes
+Variable Size		  570425344 bytes
+Database Buffers	 1895825408 bytes
+Redo Buffers		    7634944 bytes
+Database mounted.
+Database opened.
+SQL> Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+The Oracle base remains unchanged with value /opt/oracle
+#########################
+DATABASE IS READY TO USE!
+#########################
+
+Executing user defined scripts
+/opt/oracle/runUserScripts.sh: running /opt/oracle/scripts/startup/Z.001.configurePassword.sh
+
+#####################################################################
+##########              START [CONFIGURE PASSWORD]         ##########
+#####################################################################
+
+++++++++++++ VARIABLE LIST ++++++++++++
++ CONFIGURED
++-- ORACLE_PWD : secret
++++++++++++++++++++++++++++++++++++++++
+The Oracle base remains unchanged with value /opt/oracle
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Fri Sep 8 06:52:42 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> 
+User altered.
+
+SQL> 
+User altered.
+
+SQL> 
+Session altered.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+#####################################################################
+##########              FINISH [CONFIGURE PASSWORD]        ##########
+#####################################################################
+
+/opt/oracle/runUserScripts.sh: running /opt/oracle/scripts/startup/Z.002.createDefaultUser.sh
+
+#####################################################################
+##########              START [ADD DEFAULT USER]           ##########
+#####################################################################
+
+++++++++++++ VARIABLE LIST ++++++++++++
++ CONFIGURED
++-- DEFAULT_USER : foo
++-- DEFAULT_PWD : foo
++++++++++++++++++++++++++++++++++++++++
+
+#####################################################################
+##########              START [ADD USER]                   ##########
+#####################################################################
+
+++++++++++++ VARIABLE LIST ++++++++++++
++ FIXED
++-- ORACLE_PDB : ORCLPDB1
++ CONFIGURED
++-- ORACLE_PWD : secret
++-- NEW_USER : foo
++-- NEW_PWD : foo
++++++++++++++++++++++++++++++++++++++++
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Fri Sep 8 06:52:43 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> 
+Session altered.
+
+SQL> 
+User created.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+User altered.
+
+SQL> Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+#####################################################################
+##########              FINISH [ADD USER]                  ##########
+#####################################################################
+
+#####################################################################
+##########              FINISH [ADD DEFAULT USER]          ##########
+#####################################################################
+
+/opt/oracle/runUserScripts.sh: running /opt/oracle/scripts/startup/Z.101.createDefaultLogminerUser.sh
+
+#####################################################################
+##########              START [ADD DEFAULT LOGMINER USER]  ##########
+#####################################################################
+
+++++++++++++ VARIABLE LIST ++++++++++++
++ CONFIGURED
++-- DEFAULT_LOGMINER_USER : c##logminer
++-- DEFAULT_LOGMINER_PWD : logminer
++++++++++++++++++++++++++++++++++++++++
+
+#####################################################################
+##########              START [ADD LOGMINER USER]          ##########
+#####################################################################
+
+++++++++++++ VARIABLE LIST ++++++++++++
++ CONFIGURED
++-- ORACLE_PWD : secret
++-- NEW_LOGMINER_USER : c##logminer
++-- NEW_LOGMINER_PWD : logminer
++++++++++++++++++++++++++++++++++++++++
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Fri Sep 8 06:52:44 2023
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> 
+User created.
+
+SQL> SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> 
+Grant succeeded.
+
+SQL> SQL> Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+#####################################################################
+##########              FINISH [ADD LOGMINER USER]         ##########
+#####################################################################
+
+#####################################################################
+##########              FINISH [ADD DEFAULT LOGMINER USER] ##########
+#####################################################################
+
+DONE: Executing user defined scripts
+
+The following output is now a tail of the alert.log:
+Starting background process CJQ0
+2023-09-08T06:52:40.210680+00:00
+CJQ0 started with pid=61, OS id=363 
+Completed: ALTER DATABASE OPEN
+2023-09-08T06:52:44.336488+00:00
+Closing scheduler window
+Closing Resource Manager plan via scheduler window
+Clearing Resource Manager CDB plan via parameter
+ORCLPDB1(3):Setting Resource Manager plan SCHEDULER[0x4D52]:DEFAULT_MAINTENANCE_PLAN via scheduler window
+ORCLPDB1(3):Setting Resource Manager plan DEFAULT_MAINTENANCE_PLAN via parameter
+2023-09-08T06:52:50.070951+00:00
+ORCLPDB1(3):TABLE SYS.WRI$_OPTSTAT_HISTHEAD_HISTORY: ADDED INTERVAL PARTITION SYS_P241 (45176) VALUES LESS THAN (TO_DATE(' 2023-09-09 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+ORCLPDB1(3):TABLE SYS.WRI$_OPTSTAT_HISTGRM_HISTORY: ADDED INTERVAL PARTITION SYS_P244 (45176) VALUES LESS THAN (TO_DATE(' 2023-09-09 00:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+2023-09-08T06:53:28.562534+00:00
+TABLE SYS.WRP$_REPORTS: ADDED INTERVAL PARTITION SYS_P245 (4999) VALUES LESS THAN (TO_DATE(' 2023-09-09 01:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+TABLE SYS.WRP$_REPORTS_DETAILS: ADDED INTERVAL PARTITION SYS_P246 (4999) VALUES LESS THAN (TO_DATE(' 2023-09-09 01:00:00', 'SYYYY-MM-DD HH24:MI:SS', 'NLS_CALENDAR=GREGORIAN'))
+2023-09-08T06:53:53.473015+00:00
+ORCLPDB1(3):Resize operation completed for file# 10, old size 327680K, new size 337920K
+2023-09-08T06:53:53.528269+00:00
+ORCLPDB1(3):Resize operation completed for file# 10, old size 337920K, new size 358400K
+2023-09-08T06:53:54.164479+00:00
+Fri Sep 08 06:53:54 2023
+Logminer Bld: Build started
+2023-09-08T06:53:54.179819+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T06:53:54.187404+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T06:53:54.187502+00:00
+Thread 1 advanced to log sequence 10 (LGWR switch)
+  Current log# 1 seq# 10 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T06:53:54.197466+00:00
+Fri Sep 08 06:53:54 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2403693 LockdownSCN is 2403693
+2023-09-08T06:53:54.357760+00:00
+ARC2 (PID:133): Archived Log entry 2 added for T-1.S-9 ID 0xadecfdec LAD:1
+2023-09-08T06:53:54.506425+00:00
+Resize operation completed for file# 1, old size 911360K, new size 921600K
+Resize operation completed for file# 1, old size 921600K, new size 931840K
+Fri Sep 08 06:53:55 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 06:53:55 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 06:53:55 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2404891 LockdownSCN is 2404888
+ORCLPDB1(3):Resize operation completed for file# 9, old size 276480K, new size 286720K
+2023-09-08T06:53:55.631991+00:00
+ORCLPDB1(3):Resize operation completed for file# 9, old size 286720K, new size 296960K
+ORCLPDB1(3):Fri Sep 08 06:53:55 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T06:53:55.905018+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T06:53:55.913850+00:00
+Thread 1 advanced to log sequence 11 (LGWR switch)
+  Current log# 2 seq# 11 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T06:53:55.988369+00:00
+NET  (PID:712): Archived Log entry 3 added for T-1.S-10 ID 0xadecfdec LAD:1
+2023-09-08T06:53:56.115277+00:00
+LOGMINER: summary for session# = 2147484673
+LOGMINER: StartScn: 2400290 (0x000000000024a022)
+LOGMINER: EndScn: 2405998 (0x000000000024b66e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T06:53:56.126266+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147482623 thread 1 sequence 10, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_10_lhok83wp_.arc
+2023-09-08T06:53:57.590590+00:00
+Resize operation completed for file# 3, old size 522240K, new size 532480K
+2023-09-08T06:53:57.636057+00:00
+Resize operation completed for file# 3, old size 532480K, new size 552960K
+2023-09-08T06:53:57.729510+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147482623
+2023-09-08T06:53:57.729702+00:00
+LOGMINER: session# -2147482623 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T06:53:59.155210+00:00
+Resize operation completed for file# 3, old size 552960K, new size 563200K
+2023-09-08T06:53:59.196067+00:00
+Resize operation completed for file# 3, old size 563200K, new size 583680K
+2023-09-08T06:53:59.856556+00:00
+LOGMINER: Preparing to load next dictionary for session -2147482623
+2023-09-08T06:53:59.859149+00:00
+LOGMINER: session# -2147482623 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T06:54:00.926380+00:00
+Resize operation completed for file# 3, old size 583680K, new size 593920K
+2023-09-08T06:54:00.965821+00:00
+Resize operation completed for file# 3, old size 593920K, new size 614400K
+2023-09-08T06:54:02.126287+00:00
+Resize operation completed for file# 3, old size 614400K, new size 624640K
+2023-09-08T06:54:02.189132+00:00
+Resize operation completed for file# 3, old size 624640K, new size 655360K
+2023-09-08T06:54:02.340787+00:00
+LOGMINER: Finalizing dictionary load for session -2147482623
+2023-09-08T06:54:03.213858+00:00
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T06:54:13.517862+00:00
+LOGMINER: Completed dictionary load for session -2147482623
+2023-09-08T06:54:14.577789+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147482623
+2023-09-08T06:54:14.711011+00:00
+LOGMINER: Begin mining logfile for session -2147482623 thread 1 sequence 9, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_9_lhok8265_.arc
+2023-09-08T06:54:15.784769+00:00
+LOGMINER: End   mining logfile for session -2147482623 thread 1 sequence 9, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_9_lhok8265_.arc
+2023-09-08T06:54:15.785950+00:00
+LOGMINER: Begin mining logfile for session -2147482623 thread 1 sequence 10, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_10_lhok83wp_.arc
+2023-09-08T06:54:16.817082+00:00
+NET  (PID:712): Possible network disconnect with primary database
+2023-09-08T06:54:37.729955+00:00
+Fri Sep 08 06:54:37 2023
+Logminer Bld: Build started
+2023-09-08T06:54:37.736150+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T06:54:37.737203+00:00
+Thread 1 cannot allocate new log, sequence 12
+Checkpoint not complete
+  Current log# 2 seq# 11 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T06:54:39.179782+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T06:54:39.179833+00:00
+Thread 1 advanced to log sequence 12 (LGWR switch)
+  Current log# 3 seq# 12 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T06:54:39.188497+00:00
+Fri Sep 08 06:54:39 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2444689 LockdownSCN is 2444689
+2023-09-08T06:54:39.385530+00:00
+ARC0 (PID:127): Archived Log entry 4 added for T-1.S-11 ID 0xadecfdec LAD:1
+2023-09-08T06:54:39.741623+00:00
+Fri Sep 08 06:54:39 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 06:54:39 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 06:54:39 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2445052 LockdownSCN is 2445052
+2023-09-08T06:54:40.328365+00:00
+ORCLPDB1(3):Fri Sep 08 06:54:40 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T06:54:40.331424+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T06:54:40.333061+00:00
+Thread 1 cannot allocate new log, sequence 13
+Checkpoint not complete
+  Current log# 3 seq# 12 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T06:54:41.439777+00:00
+Thread 1 advanced to log sequence 13 (LGWR switch)
+  Current log# 1 seq# 13 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T06:54:41.512969+00:00
+NET  (PID:959): Archived Log entry 5 added for T-1.S-12 ID 0xadecfdec LAD:1
+2023-09-08T06:54:43.232620+00:00
+LOGMINER: summary for session# = 2147485697
+LOGMINER: StartScn: 2444663 (0x0000000000254d77)
+LOGMINER: EndScn: 2445409 (0x0000000000255061)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T06:54:43.239757+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147481599 thread 1 sequence 12, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_12_lhok9kfw_.arc
+2023-09-08T06:54:44.295462+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147481599
+2023-09-08T06:54:44.295588+00:00
+LOGMINER: session# -2147481599 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T06:54:46.060276+00:00
+LOGMINER: Preparing to load next dictionary for session -2147481599
+2023-09-08T06:54:46.060715+00:00
+LOGMINER: session# -2147481599 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T06:54:47.861173+00:00
+LOGMINER: Finalizing dictionary load for session -2147481599
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T06:55:01.467774+00:00
+LOGMINER: Completed dictionary load for session -2147481599
+2023-09-08T06:55:02.514080+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147481599
+2023-09-08T06:55:02.620839+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 11, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_11_lhok9h5q_.arc
+2023-09-08T06:55:02.756397+00:00
+LOGMINER: End   mining logfile for session -2147481599 thread 1 sequence 11, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_11_lhok9h5q_.arc
+2023-09-08T06:55:03.429036+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 12, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_12_lhok9kfw_.arc
+2023-09-08T06:55:11.154355+00:00
+LOGMINER: End   mining logfile for session -2147481599 thread 1 sequence 12, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_12_lhok9kfw_.arc
+2023-09-08T06:55:11.154810+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 13, /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T06:55:12.444568+00:00
+LOGMINER: summary for session# = 2147485697
+LOGMINER: StartScn: 2445396 (0x0000000000255054)
+LOGMINER: EndScn: 2465396 (0x0000000000259e74)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T06:55:12.451941+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 12, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_12_lhok9kfw_.arc
+2023-09-08T06:55:12.464820+00:00
+LOGMINER: End   mining logfile for session -2147481599 thread 1 sequence 12, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_12_lhok9kfw_.arc
+2023-09-08T06:55:12.465258+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 13, /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T06:55:21.119099+00:00
+LOGMINER: summary for session# = 2147485697
+LOGMINER: StartScn: 2445411 (0x0000000000255063)
+LOGMINER: EndScn: 2465411 (0x0000000000259e83)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T06:55:21.123433+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 13, /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T06:55:27.972100+00:00
+LOGMINER: summary for session# = 2147485697
+LOGMINER: StartScn: 2445411 (0x0000000000255063)
+LOGMINER: EndScn: 2484596 (0x000000000025e974)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T06:55:27.975923+00:00
+LOGMINER: Begin mining logfile for session -2147481599 thread 1 sequence 13, /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T06:57:28.326298+00:00
+Control autobackup written to DISK device
+
+handle '/opt/oracle/oradata/recovery_area/ORCLCDB/autobackup/2023_09_08/o1_mf_s_1146985048_lhokgr8r_.bkp'
+
+2023-09-08T07:02:19.625887+00:00
+Fri Sep 08 07:02:19 2023
+Logminer Bld: Build started
+2023-09-08T07:02:19.642560+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:02:19.651731+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:02:19.651854+00:00
+Thread 1 advanced to log sequence 14 (LGWR switch)
+  Current log# 2 seq# 14 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:02:19.662404+00:00
+Fri Sep 08 07:02:19 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2487932 LockdownSCN is 2487932
+2023-09-08T07:02:19.980709+00:00
+ARC2 (PID:133): Archived Log entry 6 added for T-1.S-13 ID 0xadecfdec LAD:1
+2023-09-08T07:02:20.321567+00:00
+Fri Sep 08 07:02:20 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:02:20 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:02:20 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2488294 LockdownSCN is 2488294
+2023-09-08T07:02:20.926300+00:00
+ORCLPDB1(3):Fri Sep 08 07:02:20 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:02:20.928889+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:02:20.936314+00:00
+Thread 1 advanced to log sequence 15 (LGWR switch)
+  Current log# 3 seq# 15 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:02:21.006044+00:00
+NET  (PID:1239): Archived Log entry 7 added for T-1.S-14 ID 0xadecfdec LAD:1
+2023-09-08T07:02:23.101263+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2487612 (0x000000000025f53c)
+LOGMINER: EndScn: 2488653 (0x000000000025f94d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:02:23.113468+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147480575 thread 1 sequence 14, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_14_lhokqwxd_.arc
+2023-09-08T07:02:24.253795+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147480575
+2023-09-08T07:02:24.254745+00:00
+LOGMINER: session# -2147480575 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:02:26.186620+00:00
+LOGMINER: Preparing to load next dictionary for session -2147480575
+2023-09-08T07:02:26.186850+00:00
+LOGMINER: session# -2147480575 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:02:28.134632+00:00
+LOGMINER: Finalizing dictionary load for session -2147480575
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:02:44.945583+00:00
+LOGMINER: Completed dictionary load for session -2147480575
+2023-09-08T07:02:46.005465+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147480575
+2023-09-08T07:02:46.117185+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 13, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_13_lhokqvnk_.arc
+2023-09-08T07:02:47.036164+00:00
+LOGMINER: End   mining logfile for session -2147480575 thread 1 sequence 13, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_13_lhokqvnk_.arc
+2023-09-08T07:02:47.040462+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 14, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_14_lhokqwxd_.arc
+2023-09-08T07:02:54.627955+00:00
+LOGMINER: End   mining logfile for session -2147480575 thread 1 sequence 14, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_14_lhokqwxd_.arc
+2023-09-08T07:02:54.629532+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:02:55.904563+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2488645 (0x000000000025f945)
+LOGMINER: EndScn: 2508645 (0x0000000000264765)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:02:55.914181+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 14, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_14_lhokqwxd_.arc
+2023-09-08T07:02:55.927429+00:00
+LOGMINER: End   mining logfile for session -2147480575 thread 1 sequence 14, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_14_lhokqwxd_.arc
+2023-09-08T07:02:55.928034+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:08.995542+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2508645 (0x0000000000264765)
+LOGMINER: EndScn: 2527690 (0x00000000002691ca)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:09.000842+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:17.737528+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2527683 (0x00000000002691c3)
+LOGMINER: EndScn: 2529459 (0x00000000002698b3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:17.742558+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:19.744205+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529454 (0x00000000002698ae)
+LOGMINER: EndScn: 2529466 (0x00000000002698ba)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:19.749189+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:21.624738+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529461 (0x00000000002698b5)
+LOGMINER: EndScn: 2529475 (0x00000000002698c3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:21.629377+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:23.686144+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529470 (0x00000000002698be)
+LOGMINER: EndScn: 2529484 (0x00000000002698cc)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:23.690384+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:25.951107+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529477 (0x00000000002698c5)
+LOGMINER: EndScn: 2529493 (0x00000000002698d5)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:25.956640+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:28.428188+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529486 (0x00000000002698ce)
+LOGMINER: EndScn: 2529501 (0x00000000002698dd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:28.432928+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:31.102881+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529495 (0x00000000002698d7)
+LOGMINER: EndScn: 2529931 (0x0000000000269a8b)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:31.107962+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:32.916693+00:00
+Thread 1 cannot allocate new log, sequence 16
+Checkpoint not complete
+  Current log# 3 seq# 15 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:34.684500+00:00
+LOGMINER: summary for session# = 2147486721
+LOGMINER: StartScn: 2529930 (0x0000000000269a8a)
+LOGMINER: EndScn: 2531068 (0x0000000000269efc)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:34.689152+00:00
+LOGMINER: Begin mining logfile for session -2147480575 thread 1 sequence 15, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:35.932040+00:00
+Thread 1 advanced to log sequence 16 (LGWR switch)
+  Current log# 1 seq# 16 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:03:36.215145+00:00
+ARC0 (PID:127): Archived Log entry 8 added for T-1.S-15 ID 0xadecfdec LAD:1
+2023-09-08T07:03:40.482472+00:00
+Fri Sep 08 07:03:40 2023
+Logminer Bld: Build started
+2023-09-08T07:03:40.490195+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:03:40.490862+00:00
+Thread 1 cannot allocate new log, sequence 17
+Checkpoint not complete
+  Current log# 1 seq# 16 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:03:43.197211+00:00
+Thread 1 advanced to log sequence 17 (LGWR switch)
+2023-09-08T07:03:43.197215+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+  Current log# 2 seq# 17 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:03:43.210921+00:00
+Fri Sep 08 07:03:43 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2535048 LockdownSCN is 2535048
+2023-09-08T07:03:43.229704+00:00
+ARC1 (PID:131): Archived Log entry 9 added for T-1.S-16 ID 0xadecfdec LAD:1
+2023-09-08T07:03:43.701174+00:00
+Fri Sep 08 07:03:43 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:03:43 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:03:43 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2535407 LockdownSCN is 2535407
+2023-09-08T07:03:44.340058+00:00
+ORCLPDB1(3):Fri Sep 08 07:03:44 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:03:44.343027+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:03:44.344606+00:00
+Thread 1 cannot allocate new log, sequence 18
+Checkpoint not complete
+  Current log# 2 seq# 17 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:03:47.462161+00:00
+Thread 1 advanced to log sequence 18 (LGWR switch)
+  Current log# 3 seq# 18 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:03:47.522601+00:00
+NET  (PID:1239): Archived Log entry 10 added for T-1.S-17 ID 0xadecfdec LAD:1
+2023-09-08T07:03:47.586437+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2531062 (0x0000000000269ef6)
+LOGMINER: EndScn: 2531173 (0x0000000000269f65)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:03:47.595804+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147479551 thread 1 sequence 17, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_17_lhoktmgj_.arc
+2023-09-08T07:03:48.626307+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147479551
+2023-09-08T07:03:48.626406+00:00
+LOGMINER: session# -2147479551 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:03:50.289642+00:00
+LOGMINER: Preparing to load next dictionary for session -2147479551
+2023-09-08T07:03:50.290130+00:00
+LOGMINER: session# -2147479551 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:03:51.993627+00:00
+LOGMINER: Finalizing dictionary load for session -2147479551
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:04:07.265404+00:00
+LOGMINER: Completed dictionary load for session -2147479551
+2023-09-08T07:04:08.308572+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147479551
+2023-09-08T07:04:08.394737+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 15, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_15_lhokt7x6_.arc
+2023-09-08T07:04:09.337512+00:00
+LOGMINER: End   mining logfile for session -2147479551 thread 1 sequence 15, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_15_lhokt7x6_.arc
+2023-09-08T07:04:09.340327+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 16, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_16_lhokth6h_.arc
+2023-09-08T07:04:12.395136+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2531165 (0x0000000000269f5d)
+LOGMINER: EndScn: 2551165 (0x000000000026ed7d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:12.400854+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 16, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_16_lhokth6h_.arc
+2023-09-08T07:04:13.151881+00:00
+LOGMINER: End   mining logfile for session -2147479551 thread 1 sequence 16, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_16_lhokth6h_.arc
+2023-09-08T07:04:13.165868+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 17, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_17_lhoktmgj_.arc
+2023-09-08T07:04:20.396756+00:00
+LOGMINER: End   mining logfile for session -2147479551 thread 1 sequence 17, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_17_lhoktmgj_.arc
+2023-09-08T07:04:20.401362+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:32.038749+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2551164 (0x000000000026ed7c)
+LOGMINER: EndScn: 2570461 (0x00000000002738dd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:32.043597+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:43.169022+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2570454 (0x00000000002738d6)
+LOGMINER: EndScn: 2572208 (0x0000000000273fb0)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:43.173351+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:46.533081+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572197 (0x0000000000273fa5)
+LOGMINER: EndScn: 2572228 (0x0000000000273fc4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:46.537620+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:49.797104+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572219 (0x0000000000273fbb)
+LOGMINER: EndScn: 2572239 (0x0000000000273fcf)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:49.801373+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:52.841805+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572230 (0x0000000000273fc6)
+LOGMINER: EndScn: 2572250 (0x0000000000273fda)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:52.846218+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:56.092284+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572241 (0x0000000000273fd1)
+LOGMINER: EndScn: 2572261 (0x0000000000273fe5)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:56.097976+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:04:59.150449+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572252 (0x0000000000273fdc)
+LOGMINER: EndScn: 2572272 (0x0000000000273ff0)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:04:59.154986+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:02.403932+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572263 (0x0000000000273fe7)
+LOGMINER: EndScn: 2572283 (0x0000000000273ffb)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:02.408039+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:05.448188+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572274 (0x0000000000273ff2)
+LOGMINER: EndScn: 2572294 (0x0000000000274006)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:05.452494+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:08.702943+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572285 (0x0000000000273ffd)
+LOGMINER: EndScn: 2572305 (0x0000000000274011)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:08.706810+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:11.773456+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572296 (0x0000000000274008)
+LOGMINER: EndScn: 2572316 (0x000000000027401c)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:11.777651+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:15.012743+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572307 (0x0000000000274013)
+LOGMINER: EndScn: 2572327 (0x0000000000274027)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:15.017002+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:18.066074+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572318 (0x000000000027401e)
+LOGMINER: EndScn: 2572338 (0x0000000000274032)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:18.069593+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:21.297965+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572329 (0x0000000000274029)
+LOGMINER: EndScn: 2572349 (0x000000000027403d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:21.302470+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:24.356763+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572340 (0x0000000000274034)
+LOGMINER: EndScn: 2572360 (0x0000000000274048)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:24.361620+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:27.615791+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572351 (0x000000000027403f)
+LOGMINER: EndScn: 2572371 (0x0000000000274053)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:27.619876+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:30.668758+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572362 (0x000000000027404a)
+LOGMINER: EndScn: 2572387 (0x0000000000274063)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:30.674248+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:33.945912+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572377 (0x0000000000274059)
+LOGMINER: EndScn: 2572407 (0x0000000000274077)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:33.950371+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:37.018089+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572398 (0x000000000027406e)
+LOGMINER: EndScn: 2572418 (0x0000000000274082)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:37.022341+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:40.288980+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572409 (0x0000000000274079)
+LOGMINER: EndScn: 2572431 (0x000000000027408f)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:40.293499+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:43.356619+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572426 (0x000000000027408a)
+LOGMINER: EndScn: 2572455 (0x00000000002740a7)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:43.361070+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:46.591585+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572448 (0x00000000002740a0)
+LOGMINER: EndScn: 2572466 (0x00000000002740b2)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:46.595982+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:49.647480+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572457 (0x00000000002740a9)
+LOGMINER: EndScn: 2572477 (0x00000000002740bd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:49.651564+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:52.909010+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572468 (0x00000000002740b4)
+LOGMINER: EndScn: 2572488 (0x00000000002740c8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:52.913139+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:55.971254+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572479 (0x00000000002740bf)
+LOGMINER: EndScn: 2572499 (0x00000000002740d3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:55.975704+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:05:59.227850+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572490 (0x00000000002740ca)
+LOGMINER: EndScn: 2572510 (0x00000000002740de)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:05:59.234010+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:02.318865+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572501 (0x00000000002740d5)
+LOGMINER: EndScn: 2572520 (0x00000000002740e8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:02.323033+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:05.557322+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572512 (0x00000000002740e0)
+LOGMINER: EndScn: 2572531 (0x00000000002740f3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:05.561476+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:08.609254+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572522 (0x00000000002740ea)
+LOGMINER: EndScn: 2572543 (0x00000000002740ff)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:08.613507+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:11.875624+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572533 (0x00000000002740f5)
+LOGMINER: EndScn: 2572554 (0x000000000027410a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:11.879658+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:14.925436+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572545 (0x0000000000274101)
+LOGMINER: EndScn: 2572565 (0x0000000000274115)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:14.929323+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:18.159442+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572556 (0x000000000027410c)
+LOGMINER: EndScn: 2572576 (0x0000000000274120)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:18.163875+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:21.230880+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572567 (0x0000000000274117)
+LOGMINER: EndScn: 2572587 (0x000000000027412b)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:21.237458+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:24.493158+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572578 (0x0000000000274122)
+LOGMINER: EndScn: 2572598 (0x0000000000274136)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:24.497556+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:27.539167+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572589 (0x000000000027412d)
+LOGMINER: EndScn: 2572609 (0x0000000000274141)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:27.543308+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:30.777570+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572600 (0x0000000000274138)
+LOGMINER: EndScn: 2572626 (0x0000000000274152)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:30.782238+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:33.815032+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572611 (0x0000000000274143)
+LOGMINER: EndScn: 2572637 (0x000000000027415d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:33.819355+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:37.050582+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572628 (0x0000000000274154)
+LOGMINER: EndScn: 2572648 (0x0000000000274168)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:37.054860+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:40.113008+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572639 (0x000000000027415f)
+LOGMINER: EndScn: 2572659 (0x0000000000274173)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:40.117714+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:43.370048+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572650 (0x000000000027416a)
+LOGMINER: EndScn: 2572670 (0x000000000027417e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:43.373998+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:46.424808+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572661 (0x0000000000274175)
+LOGMINER: EndScn: 2572694 (0x0000000000274196)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:46.428948+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:49.684112+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572685 (0x000000000027418d)
+LOGMINER: EndScn: 2572705 (0x00000000002741a1)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:49.688151+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:52.742651+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572696 (0x0000000000274198)
+LOGMINER: EndScn: 2572716 (0x00000000002741ac)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:52.747647+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:56.011894+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572707 (0x00000000002741a3)
+LOGMINER: EndScn: 2572727 (0x00000000002741b7)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:56.016654+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:06:59.070149+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572718 (0x00000000002741ae)
+LOGMINER: EndScn: 2572738 (0x00000000002741c2)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:06:59.074179+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:02.320778+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572729 (0x00000000002741b9)
+LOGMINER: EndScn: 2572749 (0x00000000002741cd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:02.326075+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:05.378147+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572740 (0x00000000002741c4)
+LOGMINER: EndScn: 2572760 (0x00000000002741d8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:05.382539+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:08.628907+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572751 (0x00000000002741cf)
+LOGMINER: EndScn: 2572771 (0x00000000002741e3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:08.633886+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:11.755212+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572762 (0x00000000002741da)
+LOGMINER: EndScn: 2572782 (0x00000000002741ee)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:11.759297+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:15.013586+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572773 (0x00000000002741e5)
+LOGMINER: EndScn: 2572793 (0x00000000002741f9)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:15.017760+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:18.046995+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572784 (0x00000000002741f0)
+LOGMINER: EndScn: 2572804 (0x0000000000274204)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:18.051003+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:21.278914+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572795 (0x00000000002741fb)
+LOGMINER: EndScn: 2572819 (0x0000000000274213)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:21.283586+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:24.345511+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572814 (0x000000000027420e)
+LOGMINER: EndScn: 2572851 (0x0000000000274233)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:24.351466+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:27.607855+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2572845 (0x000000000027422d)
+LOGMINER: EndScn: 2576256 (0x0000000000274f80)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:27.611795+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:31.458261+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576255 (0x0000000000274f7f)
+LOGMINER: EndScn: 2576563 (0x00000000002750b3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:31.462310+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:34.781033+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576548 (0x00000000002750a4)
+LOGMINER: EndScn: 2576599 (0x00000000002750d7)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:34.785459+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:37.854649+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576590 (0x00000000002750ce)
+LOGMINER: EndScn: 2576803 (0x00000000002751a3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:37.859404+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:41.136519+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576800 (0x00000000002751a0)
+LOGMINER: EndScn: 2576815 (0x00000000002751af)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:41.140622+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:44.185626+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576812 (0x00000000002751ac)
+LOGMINER: EndScn: 2576826 (0x00000000002751ba)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:44.189871+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:47.442591+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576817 (0x00000000002751b1)
+LOGMINER: EndScn: 2576847 (0x00000000002751cf)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:47.446981+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:50.504427+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576837 (0x00000000002751c5)
+LOGMINER: EndScn: 2576872 (0x00000000002751e8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:50.509129+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:53.771489+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576865 (0x00000000002751e1)
+LOGMINER: EndScn: 2576884 (0x00000000002751f4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:53.775408+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:07:56.837682+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576881 (0x00000000002751f1)
+LOGMINER: EndScn: 2576897 (0x0000000000275201)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:07:56.841747+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:00.104012+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576886 (0x00000000002751f6)
+LOGMINER: EndScn: 2576908 (0x000000000027520c)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:00.108424+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:03.157280+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576899 (0x0000000000275203)
+LOGMINER: EndScn: 2576922 (0x000000000027521a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:03.161463+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:06.404125+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576917 (0x0000000000275215)
+LOGMINER: EndScn: 2576934 (0x0000000000275226)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:06.408248+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:09.458595+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576929 (0x0000000000275221)
+LOGMINER: EndScn: 2576946 (0x0000000000275232)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:09.462712+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:12.712124+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576941 (0x000000000027522d)
+LOGMINER: EndScn: 2576957 (0x000000000027523d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:12.716752+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:15.776395+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576948 (0x0000000000275234)
+LOGMINER: EndScn: 2576968 (0x0000000000275248)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:15.780610+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:19.043974+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576959 (0x000000000027523f)
+LOGMINER: EndScn: 2576979 (0x0000000000275253)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:19.048109+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:22.104490+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576970 (0x000000000027524a)
+LOGMINER: EndScn: 2576990 (0x000000000027525e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:22.108618+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:25.338794+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576981 (0x0000000000275255)
+LOGMINER: EndScn: 2577001 (0x0000000000275269)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:25.342508+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:28.391381+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2576992 (0x0000000000275260)
+LOGMINER: EndScn: 2577012 (0x0000000000275274)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:28.395365+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:31.647602+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577003 (0x000000000027526b)
+LOGMINER: EndScn: 2577041 (0x0000000000275291)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:31.651995+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:34.706026+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577036 (0x000000000027528c)
+LOGMINER: EndScn: 2577133 (0x00000000002752ed)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:34.710268+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:37.973912+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577126 (0x00000000002752e6)
+LOGMINER: EndScn: 2577160 (0x0000000000275308)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:37.978772+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:41.031366+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577151 (0x00000000002752ff)
+LOGMINER: EndScn: 2577170 (0x0000000000275312)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:41.035767+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:44.279774+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577168 (0x0000000000275310)
+LOGMINER: EndScn: 2577181 (0x000000000027531d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:44.283876+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:47.328682+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577178 (0x000000000027531a)
+LOGMINER: EndScn: 2577191 (0x0000000000275327)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:47.333546+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:50.596736+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577183 (0x000000000027531f)
+LOGMINER: EndScn: 2577224 (0x0000000000275348)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:50.600905+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:53.640351+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577221 (0x0000000000275345)
+LOGMINER: EndScn: 2577363 (0x00000000002753d3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:53.644232+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:56.898936+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577360 (0x00000000002753d0)
+LOGMINER: EndScn: 2577372 (0x00000000002753dc)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:08:56.904070+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:08:59.995930+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577365 (0x00000000002753d5)
+LOGMINER: EndScn: 2577382 (0x00000000002753e6)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:00.000102+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:03.258688+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577374 (0x00000000002753de)
+LOGMINER: EndScn: 2577393 (0x00000000002753f1)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:03.262913+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:06.312300+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577389 (0x00000000002753ed)
+LOGMINER: EndScn: 2577403 (0x00000000002753fb)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:06.316373+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:09.585138+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577395 (0x00000000002753f3)
+LOGMINER: EndScn: 2577413 (0x0000000000275405)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:09.589372+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:12.652739+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577405 (0x00000000002753fd)
+LOGMINER: EndScn: 2577424 (0x0000000000275410)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:12.656873+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:15.914467+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577415 (0x0000000000275407)
+LOGMINER: EndScn: 2577434 (0x000000000027541a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:15.918832+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:18.982677+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577426 (0x0000000000275412)
+LOGMINER: EndScn: 2577448 (0x0000000000275428)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:18.987205+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:22.281523+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577444 (0x0000000000275424)
+LOGMINER: EndScn: 2577458 (0x0000000000275432)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:22.286245+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:25.351160+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577450 (0x000000000027542a)
+LOGMINER: EndScn: 2577507 (0x0000000000275463)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:25.355397+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:28.622984+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577463 (0x0000000000275437)
+LOGMINER: EndScn: 2577518 (0x000000000027546e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:28.627379+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:31.709469+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577512 (0x0000000000275468)
+LOGMINER: EndScn: 2577535 (0x000000000027547f)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:31.717292+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:35.136463+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577520 (0x0000000000275470)
+LOGMINER: EndScn: 2577545 (0x0000000000275489)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:35.140651+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:38.182287+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577537 (0x0000000000275481)
+LOGMINER: EndScn: 2577556 (0x0000000000275494)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:38.186708+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:41.430603+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577547 (0x000000000027548b)
+LOGMINER: EndScn: 2577566 (0x000000000027549e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:41.434673+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:44.491072+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577558 (0x0000000000275496)
+LOGMINER: EndScn: 2577576 (0x00000000002754a8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:44.495223+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:47.763726+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577568 (0x00000000002754a0)
+LOGMINER: EndScn: 2577587 (0x00000000002754b3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:47.768277+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:50.836464+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577578 (0x00000000002754aa)
+LOGMINER: EndScn: 2577604 (0x00000000002754c4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:50.841160+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:54.121176+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577596 (0x00000000002754bc)
+LOGMINER: EndScn: 2577620 (0x00000000002754d4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:54.125313+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:09:57.174874+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577609 (0x00000000002754c9)
+LOGMINER: EndScn: 2577631 (0x00000000002754df)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:09:57.179219+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:00.430087+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577622 (0x00000000002754d6)
+LOGMINER: EndScn: 2577642 (0x00000000002754ea)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:00.434564+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:03.480515+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577633 (0x00000000002754e1)
+LOGMINER: EndScn: 2577653 (0x00000000002754f5)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:03.485205+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:06.737085+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577644 (0x00000000002754ec)
+LOGMINER: EndScn: 2577664 (0x0000000000275500)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:06.741211+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:09.774089+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577655 (0x00000000002754f7)
+LOGMINER: EndScn: 2577675 (0x000000000027550b)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:09.778131+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:13.005738+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577666 (0x0000000000275502)
+LOGMINER: EndScn: 2577686 (0x0000000000275516)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:13.010867+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:16.080119+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577677 (0x000000000027550d)
+LOGMINER: EndScn: 2577697 (0x0000000000275521)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:16.084623+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:19.337269+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577688 (0x0000000000275518)
+LOGMINER: EndScn: 2577708 (0x000000000027552c)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:19.341399+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:22.404687+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577699 (0x0000000000275523)
+LOGMINER: EndScn: 2577719 (0x0000000000275537)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:22.408923+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:25.642709+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577710 (0x000000000027552e)
+LOGMINER: EndScn: 2577730 (0x0000000000275542)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:25.647455+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:28.684035+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577721 (0x0000000000275539)
+LOGMINER: EndScn: 2577741 (0x000000000027554d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:28.688561+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:31.963778+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577732 (0x0000000000275544)
+LOGMINER: EndScn: 2577760 (0x0000000000275560)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:31.968180+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:35.009735+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577743 (0x000000000027554f)
+LOGMINER: EndScn: 2577770 (0x000000000027556a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:35.014409+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:38.259009+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577762 (0x0000000000275562)
+LOGMINER: EndScn: 2577781 (0x0000000000275575)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:38.263452+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:41.319025+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577772 (0x000000000027556c)
+LOGMINER: EndScn: 2577792 (0x0000000000275580)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:41.323199+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:44.570626+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577783 (0x0000000000275577)
+LOGMINER: EndScn: 2577802 (0x000000000027558a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:44.574833+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:47.631591+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577794 (0x0000000000275582)
+LOGMINER: EndScn: 2577813 (0x0000000000275595)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:47.635930+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:50.894634+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577804 (0x000000000027558c)
+LOGMINER: EndScn: 2577824 (0x00000000002755a0)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:50.898850+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:53.940032+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577815 (0x0000000000275597)
+LOGMINER: EndScn: 2577848 (0x00000000002755b8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:53.943914+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:10:57.199688+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577841 (0x00000000002755b1)
+LOGMINER: EndScn: 2577859 (0x00000000002755c3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:10:57.203897+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:00.258329+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577850 (0x00000000002755ba)
+LOGMINER: EndScn: 2577870 (0x00000000002755ce)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:00.262345+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:03.488271+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577861 (0x00000000002755c5)
+LOGMINER: EndScn: 2577881 (0x00000000002755d9)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:03.492625+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:06.555439+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577872 (0x00000000002755d0)
+LOGMINER: EndScn: 2577892 (0x00000000002755e4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:06.559691+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:09.815859+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577883 (0x00000000002755db)
+LOGMINER: EndScn: 2577903 (0x00000000002755ef)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:09.820112+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:12.847045+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577894 (0x00000000002755e6)
+LOGMINER: EndScn: 2577914 (0x00000000002755fa)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:12.850726+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:16.089782+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577905 (0x00000000002755f1)
+LOGMINER: EndScn: 2577925 (0x0000000000275605)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:16.094093+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:19.131556+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577916 (0x00000000002755fc)
+LOGMINER: EndScn: 2577936 (0x0000000000275610)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:19.135896+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:22.366971+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577927 (0x0000000000275607)
+LOGMINER: EndScn: 2577947 (0x000000000027561b)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:22.371436+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:25.419740+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577938 (0x0000000000275612)
+LOGMINER: EndScn: 2577958 (0x0000000000275626)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:25.423914+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:28.677774+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577949 (0x000000000027561d)
+LOGMINER: EndScn: 2577969 (0x0000000000275631)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:28.681951+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:31.732001+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577960 (0x0000000000275628)
+LOGMINER: EndScn: 2577986 (0x0000000000275642)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:31.736253+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:34.980200+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577971 (0x0000000000275633)
+LOGMINER: EndScn: 2577997 (0x000000000027564d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:34.984633+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:38.029224+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577988 (0x0000000000275644)
+LOGMINER: EndScn: 2578008 (0x0000000000275658)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:38.032744+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:41.252688+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2577999 (0x000000000027564f)
+LOGMINER: EndScn: 2578019 (0x0000000000275663)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:41.257234+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:44.301610+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578010 (0x000000000027565a)
+LOGMINER: EndScn: 2578030 (0x000000000027566e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:44.305570+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:47.552725+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578021 (0x0000000000275665)
+LOGMINER: EndScn: 2578041 (0x0000000000275679)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:47.557098+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:50.599325+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578032 (0x0000000000275670)
+LOGMINER: EndScn: 2578052 (0x0000000000275684)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:50.604011+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:53.843987+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578043 (0x000000000027567b)
+LOGMINER: EndScn: 2578063 (0x000000000027568f)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:53.848239+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:11:56.891478+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578054 (0x0000000000275686)
+LOGMINER: EndScn: 2578087 (0x00000000002756a7)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:11:56.895560+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:00.127801+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578080 (0x00000000002756a0)
+LOGMINER: EndScn: 2578098 (0x00000000002756b2)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:00.131721+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:03.172220+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578089 (0x00000000002756a9)
+LOGMINER: EndScn: 2578109 (0x00000000002756bd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:03.176319+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:06.406126+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578100 (0x00000000002756b4)
+LOGMINER: EndScn: 2578120 (0x00000000002756c8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:06.410184+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:09.436554+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578111 (0x00000000002756bf)
+LOGMINER: EndScn: 2578131 (0x00000000002756d3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:09.440758+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:12.670606+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578122 (0x00000000002756ca)
+LOGMINER: EndScn: 2578142 (0x00000000002756de)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:12.674923+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:15.706401+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578133 (0x00000000002756d5)
+LOGMINER: EndScn: 2578153 (0x00000000002756e9)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:15.710272+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:18.950563+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578144 (0x00000000002756e0)
+LOGMINER: EndScn: 2578163 (0x00000000002756f3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:18.954530+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:22.002532+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578155 (0x00000000002756eb)
+LOGMINER: EndScn: 2578173 (0x00000000002756fd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:22.007145+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:25.232359+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578165 (0x00000000002756f5)
+LOGMINER: EndScn: 2578183 (0x0000000000275707)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:25.236524+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:28.263187+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578175 (0x00000000002756ff)
+LOGMINER: EndScn: 2578194 (0x0000000000275712)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:28.267356+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:31.495159+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578185 (0x0000000000275709)
+LOGMINER: EndScn: 2578218 (0x000000000027572a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:31.498303+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:34.507166+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578206 (0x000000000027571e)
+LOGMINER: EndScn: 2578226 (0x0000000000275732)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:34.511371+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:37.734703+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578220 (0x000000000027572c)
+LOGMINER: EndScn: 2578239 (0x000000000027573f)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:37.738784+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:40.792939+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578230 (0x0000000000275736)
+LOGMINER: EndScn: 2578256 (0x0000000000275750)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:40.797121+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:44.033337+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578247 (0x0000000000275747)
+LOGMINER: EndScn: 2578266 (0x000000000027575a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:44.037293+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:47.076274+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578258 (0x0000000000275752)
+LOGMINER: EndScn: 2578277 (0x0000000000275765)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:47.080336+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:50.308547+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578268 (0x000000000027575c)
+LOGMINER: EndScn: 2578287 (0x000000000027576f)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:50.312542+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:53.340830+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578279 (0x0000000000275767)
+LOGMINER: EndScn: 2578298 (0x000000000027577a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:53.344939+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:56.571813+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578289 (0x0000000000275771)
+LOGMINER: EndScn: 2578309 (0x0000000000275785)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:56.575762+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:12:59.600905+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578300 (0x000000000027577c)
+LOGMINER: EndScn: 2578333 (0x000000000027579d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:12:59.605069+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:02.834563+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578324 (0x0000000000275794)
+LOGMINER: EndScn: 2578344 (0x00000000002757a8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:02.838803+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:05.907261+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578335 (0x000000000027579f)
+LOGMINER: EndScn: 2578354 (0x00000000002757b2)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:05.911383+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:09.151495+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578346 (0x00000000002757aa)
+LOGMINER: EndScn: 2578365 (0x00000000002757bd)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:09.155415+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:12.183521+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578356 (0x00000000002757b4)
+LOGMINER: EndScn: 2578376 (0x00000000002757c8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:12.187974+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:15.424280+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578367 (0x00000000002757bf)
+LOGMINER: EndScn: 2578387 (0x00000000002757d3)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:15.428310+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:18.462479+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578378 (0x00000000002757ca)
+LOGMINER: EndScn: 2578398 (0x00000000002757de)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:18.466599+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:21.722842+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578389 (0x00000000002757d5)
+LOGMINER: EndScn: 2578409 (0x00000000002757e9)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:21.726801+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:24.777031+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578400 (0x00000000002757e0)
+LOGMINER: EndScn: 2578420 (0x00000000002757f4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:24.781094+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:28.048170+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578411 (0x00000000002757eb)
+LOGMINER: EndScn: 2578431 (0x00000000002757ff)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:28.053020+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:31.114595+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578422 (0x00000000002757f6)
+LOGMINER: EndScn: 2578442 (0x000000000027580a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:31.118776+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:34.369514+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578433 (0x0000000000275801)
+LOGMINER: EndScn: 2578472 (0x0000000000275828)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:34.373691+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:37.435540+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578468 (0x0000000000275824)
+LOGMINER: EndScn: 2578482 (0x0000000000275832)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:37.439622+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:40.685392+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578474 (0x000000000027582a)
+LOGMINER: EndScn: 2578493 (0x000000000027583d)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:40.689972+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:43.719267+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578484 (0x0000000000275834)
+LOGMINER: EndScn: 2578504 (0x0000000000275848)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:43.723352+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:46.952715+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578495 (0x000000000027583f)
+LOGMINER: EndScn: 2578515 (0x0000000000275853)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:46.956732+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:50.019224+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578506 (0x000000000027584a)
+LOGMINER: EndScn: 2578526 (0x000000000027585e)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:50.024158+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:53.323652+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578517 (0x0000000000275855)
+LOGMINER: EndScn: 2578536 (0x0000000000275868)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:53.328039+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:56.385778+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578528 (0x0000000000275860)
+LOGMINER: EndScn: 2578546 (0x0000000000275872)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:56.390037+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:13:59.657930+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578538 (0x000000000027586a)
+LOGMINER: EndScn: 2578562 (0x0000000000275882)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:13:59.662035+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:14:02.725375+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578554 (0x000000000027587a)
+LOGMINER: EndScn: 2578581 (0x0000000000275895)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:14:02.729903+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:14:06.014206+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578578 (0x0000000000275892)
+LOGMINER: EndScn: 2578634 (0x00000000002758ca)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:14:06.018594+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:14:09.068686+00:00
+LOGMINER: summary for session# = 2147487745
+LOGMINER: StartScn: 2578625 (0x00000000002758c1)
+LOGMINER: EndScn: 2578648 (0x00000000002758d8)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:14:09.077571+00:00
+LOGMINER: Begin mining logfile for session -2147479551 thread 1 sequence 18, /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:14:09.273052+00:00
+Fri Sep 08 07:14:09 2023
+Logminer Bld: Build started
+2023-09-08T07:14:09.286672+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:14:09.297393+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:14:09.297441+00:00
+Thread 1 advanced to log sequence 19 (LGWR switch)
+  Current log# 1 seq# 19 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:14:09.312763+00:00
+Fri Sep 08 07:14:09 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2578657 LockdownSCN is 2578657
+2023-09-08T07:14:09.633036+00:00
+ARC3 (PID:135): Archived Log entry 11 added for T-1.S-18 ID 0xadecfdec LAD:1
+2023-09-08T07:14:10.029586+00:00
+Fri Sep 08 07:14:10 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:14:10 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:14:10 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2579034 LockdownSCN is 2579034
+2023-09-08T07:14:10.617849+00:00
+ORCLPDB1(3):Fri Sep 08 07:14:10 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:14:10.621178+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:14:10.628658+00:00
+Thread 1 advanced to log sequence 20 (LGWR switch)
+  Current log# 2 seq# 20 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:14:10.704713+00:00
+NET  (PID:1680): Archived Log entry 12 added for T-1.S-19 ID 0xadecfdec LAD:1
+2023-09-08T07:14:10.795611+00:00
+LOGMINER: summary for session# = 2147488769
+LOGMINER: StartScn: 2578624 (0x00000000002758c0)
+LOGMINER: EndScn: 2579391 (0x0000000000275bbf)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:14:10.805696+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147478527 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:14:12.026640+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147478527
+2023-09-08T07:14:12.026753+00:00
+LOGMINER: session# -2147478527 Processing dictionary for pluggable database CDB$ROOT
+Resize operation completed for file# 3, old size 655360K, new size 665600K
+2023-09-08T07:14:12.650547+00:00
+Resize operation completed for file# 3, old size 665600K, new size 696320K
+2023-09-08T07:14:14.187321+00:00
+LOGMINER: Preparing to load next dictionary for session -2147478527
+2023-09-08T07:14:14.187606+00:00
+LOGMINER: session# -2147478527 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:14:14.816112+00:00
+Fri Sep 08 07:14:14 2023
+Logminer Bld: Build started
+2023-09-08T07:14:14.818386+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:14:14.818972+00:00
+Thread 1 cannot allocate new log, sequence 21
+Checkpoint not complete
+  Current log# 2 seq# 20 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:14:15.558210+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:14:15.558256+00:00
+Thread 1 advanced to log sequence 21 (LGWR switch)
+  Current log# 3 seq# 21 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:14:15.565984+00:00
+Fri Sep 08 07:14:15 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2601240 LockdownSCN is 2601240
+2023-09-08T07:14:15.705832+00:00
+ARC1 (PID:131): Archived Log entry 13 added for T-1.S-20 ID 0xadecfdec LAD:1
+2023-09-08T07:14:16.149483+00:00
+Fri Sep 08 07:14:16 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:14:16 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:14:16 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2602263 LockdownSCN is 2602261
+2023-09-08T07:14:16.564827+00:00
+LOGMINER: Finalizing dictionary load for session -2147478527
+2023-09-08T07:14:16.803861+00:00
+ORCLPDB1(3):Fri Sep 08 07:14:16 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:14:16.806612+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:14:16.808171+00:00
+Thread 1 cannot allocate new log, sequence 22
+Checkpoint not complete
+  Current log# 3 seq# 21 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:14:17.296361+00:00
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:14:18.573452+00:00
+Thread 1 advanced to log sequence 22 (LGWR switch)
+  Current log# 1 seq# 22 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:14:18.678815+00:00
+NET  (PID:1239): Archived Log entry 14 added for T-1.S-21 ID 0xadecfdec LAD:1
+2023-09-08T07:14:32.885284+00:00
+LOGMINER: Completed dictionary load for session -2147478527
+2023-09-08T07:14:32.885900+00:00
+LOGMINER: summary for session# = 2147489793
+LOGMINER: StartScn: 2578642 (0x00000000002758d2)
+LOGMINER: EndScn: 2587146 (0x0000000000277a0a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:14:32.892071+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147477503 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:14:33.912642+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147478527
+2023-09-08T07:14:33.987482+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147477503
+2023-09-08T07:14:33.987578+00:00
+LOGMINER: session# -2147477503 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:14:34.028624+00:00
+LOGMINER: Begin mining logfile for session -2147478527 thread 1 sequence 18, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_18_lholg19m_.arc
+2023-09-08T07:14:34.248594+00:00
+LOGMINER: End   mining logfile for session -2147478527 thread 1 sequence 18, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_18_lholg19m_.arc
+2023-09-08T07:14:34.971508+00:00
+LOGMINER: Begin mining logfile for session -2147478527 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:14:35.862510+00:00
+LOGMINER: Preparing to load next dictionary for session -2147477503
+2023-09-08T07:14:35.862706+00:00
+LOGMINER: session# -2147477503 Processing dictionary for pluggable database ORCLPDB1
+Resize operation completed for file# 3, old size 696320K, new size 706560K
+2023-09-08T07:14:36.049734+00:00
+Resize operation completed for file# 3, old size 706560K, new size 737280K
+2023-09-08T07:14:37.468496+00:00
+Resize operation completed for file# 3, old size 737280K, new size 747520K
+2023-09-08T07:14:37.526919+00:00
+Resize operation completed for file# 3, old size 747520K, new size 778240K
+2023-09-08T07:14:37.687078+00:00
+LOGMINER: Finalizing dictionary load for session -2147477503
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:14:46.704657+00:00
+Resize operation completed for file# 1, old size 931840K, new size 942080K
+2023-09-08T07:14:56.144794+00:00
+LOGMINER: Completed dictionary load for session -2147477503
+2023-09-08T07:14:57.207793+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147477503
+2023-09-08T07:14:57.284655+00:00
+LOGMINER: Begin mining logfile for session -2147477503 thread 1 sequence 18, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_18_lholg19m_.arc
+2023-09-08T07:14:57.471679+00:00
+LOGMINER: End   mining logfile for session -2147477503 thread 1 sequence 18, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_18_lholg19m_.arc
+2023-09-08T07:14:58.063758+00:00
+LOGMINER: Begin mining logfile for session -2147477503 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:15:01.578224+00:00
+LOGMINER: End   mining logfile for session -2147478527 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:15:01.579851+00:00
+LOGMINER: Begin mining logfile for session -2147478527 thread 1 sequence 20, /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:15:04.574978+00:00
+Thread 1 cannot allocate new log, sequence 23
+Checkpoint not complete
+  Current log# 1 seq# 22 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:15:05.042819+00:00
+Fri Sep 08 07:15:05 2023
+Logminer Bld: Build started
+2023-09-08T07:15:05.049562+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:15:05.055652+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:15:05.055731+00:00
+Thread 1 advanced to log sequence 23 (LGWR switch)
+  Current log# 2 seq# 23 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:15:05.064044+00:00
+Fri Sep 08 07:15:05 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2649138 LockdownSCN is 2649138
+2023-09-08T07:15:05.378636+00:00
+ARC3 (PID:135): Archived Log entry 15 added for T-1.S-22 ID 0xadecfdec LAD:1
+2023-09-08T07:15:05.698710+00:00
+Fri Sep 08 07:15:05 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:15:05 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:15:05 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2649500 LockdownSCN is 2649500
+2023-09-08T07:15:06.289115+00:00
+ORCLPDB1(3):Fri Sep 08 07:15:06 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:15:06.291925+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:15:06.293716+00:00
+Thread 1 cannot allocate new log, sequence 24
+Checkpoint not complete
+  Current log# 2 seq# 23 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:15:06.821656+00:00
+Thread 1 advanced to log sequence 24 (LGWR switch)
+  Current log# 3 seq# 24 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:15:06.882995+00:00
+NET  (PID:1680): Archived Log entry 16 added for T-1.S-23 ID 0xadecfdec LAD:1
+2023-09-08T07:15:06.947766+00:00
+LOGMINER: summary for session# = 2147490817
+LOGMINER: StartScn: 2579380 (0x0000000000275bb4)
+LOGMINER: EndScn: 2599380 (0x000000000027a9d4)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:15:06.956551+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147476479 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:15:08.188203+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147476479
+2023-09-08T07:15:08.188305+00:00
+LOGMINER: session# -2147476479 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:15:09.535426+00:00
+LOGMINER: End   mining logfile for session -2147477503 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:15:09.562347+00:00
+LOGMINER: Begin mining logfile for session -2147477503 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:15:10.468972+00:00
+LOGMINER: Preparing to load next dictionary for session -2147476479
+2023-09-08T07:15:10.469167+00:00
+LOGMINER: session# -2147476479 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:15:12.515469+00:00
+LOGMINER: Finalizing dictionary load for session -2147476479
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:15:31.042926+00:00
+LOGMINER: Completed dictionary load for session -2147476479
+2023-09-08T07:15:32.088147+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147476479
+2023-09-08T07:15:32.182204+00:00
+LOGMINER: Begin mining logfile for session -2147476479 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:15:33.819878+00:00
+LOGMINER: End   mining logfile for session -2147476479 thread 1 sequence 19, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_19_lholg2ms_.arc
+2023-09-08T07:15:33.826405+00:00
+LOGMINER: Begin mining logfile for session -2147476479 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:15:37.246521+00:00
+Fri Sep 08 07:15:37 2023
+Logminer Bld: Build started
+2023-09-08T07:15:37.255258+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:15:37.256371+00:00
+Thread 1 cannot allocate new log, sequence 25
+Checkpoint not complete
+  Current log# 3 seq# 24 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:15:40.396433+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:15:40.396478+00:00
+Thread 1 advanced to log sequence 25 (LGWR switch)
+  Current log# 1 seq# 25 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:15:40.403149+00:00
+Fri Sep 08 07:15:40 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2690008 LockdownSCN is 2690004
+2023-09-08T07:15:40.685485+00:00
+ARC1 (PID:131): Archived Log entry 17 added for T-1.S-24 ID 0xadecfdec LAD:1
+2023-09-08T07:15:41.050123+00:00
+Fri Sep 08 07:15:41 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:15:41 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:15:41 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2690451 LockdownSCN is 2690451
+2023-09-08T07:15:41.748714+00:00
+ORCLPDB1(3):Fri Sep 08 07:15:41 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:15:41.751571+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:15:41.753391+00:00
+Thread 1 cannot allocate new log, sequence 26
+Checkpoint not complete
+  Current log# 1 seq# 25 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:15:43.307399+00:00
+Thread 1 advanced to log sequence 26 (LGWR switch)
+  Current log# 2 seq# 26 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:15:43.382492+00:00
+NET  (PID:1239): Archived Log entry 18 added for T-1.S-25 ID 0xadecfdec LAD:1
+2023-09-08T07:15:43.469801+00:00
+LOGMINER: summary for session# = 2147491841
+LOGMINER: StartScn: 2587146 (0x0000000000277a0a)
+LOGMINER: EndScn: 2607146 (0x000000000027c82a)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:15:43.480531+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147475455 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:15:44.606798+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147475455
+2023-09-08T07:15:44.606976+00:00
+LOGMINER: session# -2147475455 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:15:46.590954+00:00
+LOGMINER: Preparing to load next dictionary for session -2147475455
+2023-09-08T07:15:46.595915+00:00
+LOGMINER: session# -2147475455 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:15:48.703434+00:00
+LOGMINER: Finalizing dictionary load for session -2147475455
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:16:08.082904+00:00
+LOGMINER: Completed dictionary load for session -2147475455
+2023-09-08T07:16:09.144421+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147475455
+2023-09-08T07:16:10.176184+00:00
+Fri Sep 08 07:16:10 2023
+Logminer Bld: Build started
+2023-09-08T07:16:10.185327+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:16:10.185917+00:00
+Thread 1 cannot allocate new log, sequence 27
+Checkpoint not complete
+  Current log# 2 seq# 26 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:16:10.190130+00:00
+LOGMINER: Begin mining logfile for session -2147475455 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:16:11.048121+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:16:11.048299+00:00
+Thread 1 advanced to log sequence 27 (LGWR switch)
+  Current log# 3 seq# 27 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:16:11.058711+00:00
+Fri Sep 08 07:16:11 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2727383 LockdownSCN is 2727382
+2023-09-08T07:16:11.324456+00:00
+ARC3 (PID:135): Archived Log entry 19 added for T-1.S-26 ID 0xadecfdec LAD:1
+2023-09-08T07:16:11.673860+00:00
+Fri Sep 08 07:16:11 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:16:11 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:16:11 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2727828 LockdownSCN is 2727828
+ORCLPDB1(3):Fri Sep 08 07:16:12 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:16:12.269509+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:16:12.271266+00:00
+Thread 1 cannot allocate new log, sequence 28
+Checkpoint not complete
+  Current log# 3 seq# 27 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:16:13.815612+00:00
+Thread 1 advanced to log sequence 28 (LGWR switch)
+  Current log# 1 seq# 28 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:16:13.876682+00:00
+NET  (PID:1680): Archived Log entry 20 added for T-1.S-27 ID 0xadecfdec LAD:1
+2023-09-08T07:16:13.955296+00:00
+LOGMINER: summary for session# = 2147492865
+LOGMINER: StartScn: 2579393 (0x0000000000275bc1)
+LOGMINER: EndScn: 2600393 (0x000000000027adc9)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:16:13.963457+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147474431 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:16:15.459261+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147474431
+2023-09-08T07:16:15.459359+00:00
+LOGMINER: session# -2147474431 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:16:17.345917+00:00
+LOGMINER: Preparing to load next dictionary for session -2147474431
+2023-09-08T07:16:17.349972+00:00
+LOGMINER: session# -2147474431 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:16:19.134820+00:00
+LOGMINER: Finalizing dictionary load for session -2147474431
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:16:38.584004+00:00
+LOGMINER: Completed dictionary load for session -2147474431
+2023-09-08T07:16:39.608535+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147474431
+2023-09-08T07:16:39.692100+00:00
+LOGMINER: Begin mining logfile for session -2147474431 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:16:41.093705+00:00
+LOGMINER: End   mining logfile for session -2147475455 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:16:41.096705+00:00
+LOGMINER: Begin mining logfile for session -2147475455 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:16:49.664195+00:00
+LOGMINER: summary for session# = 2147492865
+LOGMINER: StartScn: 2579393 (0x0000000000275bc1)
+LOGMINER: EndScn: 2601393 (0x000000000027b1b1)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x400
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:16:49.671146+00:00
+LOGMINER: Begin mining logfile for session -2147474431 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:16:49.816355+00:00
+LOGMINER: End   mining logfile for session -2147475455 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:16:49.819472+00:00
+LOGMINER: Begin mining logfile for session -2147475455 thread 1 sequence 22, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_22_lholhs1w_.arc
+2023-09-08T07:16:55.346754+00:00
+Fri Sep 08 07:16:55 2023
+Logminer Bld: Build started
+2023-09-08T07:16:55.357355+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:16:55.357983+00:00
+Thread 1 cannot allocate new log, sequence 29
+Checkpoint not complete
+  Current log# 1 seq# 28 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:16:56.598467+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:16:56.598494+00:00
+Thread 1 advanced to log sequence 29 (LGWR switch)
+  Current log# 2 seq# 29 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:16:56.604154+00:00
+Fri Sep 08 07:16:56 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2766383 LockdownSCN is 2766383
+2023-09-08T07:16:56.854579+00:00
+ARC1 (PID:131): Archived Log entry 21 added for T-1.S-28 ID 0xadecfdec LAD:1
+2023-09-08T07:16:57.173406+00:00
+Fri Sep 08 07:16:57 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:16:57 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:16:57 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2766743 LockdownSCN is 2766743
+2023-09-08T07:16:57.758837+00:00
+ORCLPDB1(3):Fri Sep 08 07:16:57 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:16:57.761201+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:16:57.762667+00:00
+Thread 1 cannot allocate new log, sequence 30
+Checkpoint not complete
+  Current log# 2 seq# 29 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:16:59.342755+00:00
+Thread 1 advanced to log sequence 30 (LGWR switch)
+  Current log# 3 seq# 30 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:16:59.405930+00:00
+NET  (PID:1239): Archived Log entry 22 added for T-1.S-29 ID 0xadecfdec LAD:1
+2023-09-08T07:16:59.465091+00:00
+LOGMINER: summary for session# = 2147493889
+LOGMINER: StartScn: 2607146 (0x000000000027c82a)
+LOGMINER: EndScn: 2628146 (0x0000000000281a32)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:16:59.473385+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147473407 thread 1 sequence 23, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_23_lholhtsq_.arc
+2023-09-08T07:17:00.447868+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147473407
+2023-09-08T07:17:00.447991+00:00
+LOGMINER: session# -2147473407 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:17:01.923831+00:00
+LOGMINER: End   mining logfile for session -2147474431 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:17:01.925856+00:00
+LOGMINER: Begin mining logfile for session -2147474431 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:17:02.247674+00:00
+LOGMINER: Preparing to load next dictionary for session -2147473407
+2023-09-08T07:17:02.249711+00:00
+LOGMINER: session# -2147473407 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:17:04.257361+00:00
+LOGMINER: Finalizing dictionary load for session -2147473407
+2023-09-08T07:17:04.935622+00:00
+Fri Sep 08 07:17:04 2023
+Logminer Bld: Build started
+2023-09-08T07:17:04.936102+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:17:04.936750+00:00
+Thread 1 cannot allocate new log, sequence 31
+Checkpoint not complete
+  Current log# 3 seq# 30 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:17:05.970063+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:17:05.970110+00:00
+Thread 1 advanced to log sequence 31 (LGWR switch)
+  Current log# 1 seq# 31 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:17:05.977729+00:00
+Fri Sep 08 07:17:05 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2791988 LockdownSCN is 2791988
+2023-09-08T07:17:06.158036+00:00
+ARC3 (PID:135): Archived Log entry 23 added for T-1.S-30 ID 0xadecfdec LAD:1
+2023-09-08T07:17:06.543730+00:00
+Fri Sep 08 07:17:06 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:17:06 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:17:06 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2793457 LockdownSCN is 2793457
+2023-09-08T07:17:06.638129+00:00
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:17:07.072342+00:00
+ORCLPDB1(3):Fri Sep 08 07:17:07 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:17:07.075051+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:17:07.076581+00:00
+Thread 1 cannot allocate new log, sequence 32
+Checkpoint not complete
+  Current log# 1 seq# 31 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:17:08.766803+00:00
+Thread 1 advanced to log sequence 32 (LGWR switch)
+  Current log# 2 seq# 32 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:17:08.856394+00:00
+NET  (PID:1680): Archived Log entry 24 added for T-1.S-31 ID 0xadecfdec LAD:1
+2023-09-08T07:17:21.819944+00:00
+LOGMINER: Completed dictionary load for session -2147473407
+2023-09-08T07:17:21.824132+00:00
+LOGMINER: summary for session# = 2147494913
+LOGMINER: StartScn: 2579393 (0x0000000000275bc1)
+LOGMINER: EndScn: 2602393 (0x000000000027b599)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:17:21.830802+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147472383 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:17:22.872678+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147473407
+2023-09-08T07:17:22.898445+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147472383
+2023-09-08T07:17:22.898561+00:00
+LOGMINER: session# -2147472383 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:17:22.989902+00:00
+LOGMINER: Begin mining logfile for session -2147473407 thread 1 sequence 22, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_22_lholhs1w_.arc
+2023-09-08T07:17:24.891530+00:00
+LOGMINER: Preparing to load next dictionary for session -2147472383
+2023-09-08T07:17:24.899872+00:00
+LOGMINER: session# -2147472383 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:17:27.136305+00:00
+LOGMINER: Finalizing dictionary load for session -2147472383
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)
+2023-09-08T07:17:45.811990+00:00
+LOGMINER: Completed dictionary load for session -2147472383
+2023-09-08T07:17:46.872756+00:00
+LOGMINER: End mining logfiles during dictionary load for session -2147472383
+2023-09-08T07:17:46.955246+00:00
+LOGMINER: Begin mining logfile for session -2147472383 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:17:55.749922+00:00
+Thread 1 cannot allocate new log, sequence 33
+Checkpoint not complete
+  Current log# 2 seq# 32 mem# 0: /opt/oracle/oradata/ORCLCDB/redo02.log
+2023-09-08T07:17:57.681734+00:00
+Fri Sep 08 07:17:57 2023
+Logminer Bld: Build started
+2023-09-08T07:17:57.682176+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE start (ORCLCDB)
+2023-09-08T07:17:57.688922+00:00
+ALTER SYSTEM SWITCH ALL LOGFILE complete (ORCLCDB)
+2023-09-08T07:17:57.688994+00:00
+Thread 1 advanced to log sequence 33 (LGWR switch)
+  Current log# 3 seq# 33 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:17:57.696792+00:00
+Fri Sep 08 07:17:57 2023
+Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2839159 LockdownSCN is 2839159
+2023-09-08T07:17:58.026427+00:00
+ARC1 (PID:131): Archived Log entry 25 added for T-1.S-32 ID 0xadecfdec LAD:1
+2023-09-08T07:17:58.302798+00:00
+Fri Sep 08 07:17:58 2023
+Logminer Bld: Done
+ORCLPDB1(3):Fri Sep 08 07:17:58 2023
+ORCLPDB1(3):Logminer Bld: Build started
+ORCLPDB1(3):Fri Sep 08 07:17:58 2023
+ORCLPDB1(3):Logminer Bld: Lockdown Complete.  DB_TXN_SCN is 0 2839523 LockdownSCN is 2839523
+2023-09-08T07:17:58.858442+00:00
+ORCLPDB1(3):Fri Sep 08 07:17:58 2023
+ORCLPDB1(3):Logminer Bld: Done
+2023-09-08T07:17:58.861696+00:00
+ALTER SYSTEM ARCHIVE LOG
+2023-09-08T07:17:58.863348+00:00
+Thread 1 cannot allocate new log, sequence 34
+Checkpoint not complete
+  Current log# 3 seq# 33 mem# 0: /opt/oracle/oradata/ORCLCDB/redo03.log
+2023-09-08T07:17:59.928686+00:00
+LOGMINER: End   mining logfile for session -2147472383 thread 1 sequence 20, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_20_lholg7kl_.arc
+2023-09-08T07:17:59.930378+00:00
+LOGMINER: Begin mining logfile for session -2147472383 thread 1 sequence 21, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_21_lholgbkz_.arc
+2023-09-08T07:18:00.143381+00:00
+Thread 1 advanced to log sequence 34 (LGWR switch)
+  Current log# 1 seq# 34 mem# 0: /opt/oracle/oradata/ORCLCDB/redo01.log
+2023-09-08T07:18:00.206793+00:00
+NET  (PID:1239): Archived Log entry 26 added for T-1.S-33 ID 0xadecfdec LAD:1
+2023-09-08T07:18:00.294947+00:00
+LOGMINER: summary for session# = 2147495937
+LOGMINER: StartScn: 2628146 (0x0000000000281a32)
+LOGMINER: EndScn: 2650146 (0x0000000000287022)
+LOGMINER: HighConsumedScn: 0
+LOGMINER: PSR flags: 0x0
+LOGMINER: Session Flags: 0x4000001
+LOGMINER: Session Flags2: 0x0
+LOGMINER: Read buffers: 4
+LOGMINER: Region Queue size: 256
+LOGMINER: Redo Queue size: 4096
+LOGMINER: Memory LWM: limit 10M, LWM 12M, 80%
+LOGMINER: Memory Release Limit: 0M
+LOGMINER: Max Decomp Region Memory: 1M
+LOGMINER: Transaction Queue Size: 1024
+2023-09-08T07:18:00.303607+00:00
+LOGMINER: Begin mining logfile during dictionary load for session -2147471359 thread 1 sequence 23, /opt/oracle/oradata/recovery_area/ORCLCDB/archivelog/2023_09_08/o1_mf_1_23_lholhtsq_.arc
+2023-09-08T07:18:01.387039+00:00
+LOGMINER: Preparing to load 2 dictionaries for session -2147471359
+2023-09-08T07:18:01.387153+00:00
+LOGMINER: session# -2147471359 Processing dictionary for pluggable database CDB$ROOT
+2023-09-08T07:18:03.278433+00:00
+LOGMINER: Preparing to load next dictionary for session -2147471359
+2023-09-08T07:18:03.281732+00:00
+LOGMINER: session# -2147471359 Processing dictionary for pluggable database ORCLPDB1
+2023-09-08T07:18:05.081149+00:00
+LOGMINER: Finalizing dictionary load for session -2147471359
+LOGMINER: Gathering statistics on logminer dictionary. (incremental, nonparallel)

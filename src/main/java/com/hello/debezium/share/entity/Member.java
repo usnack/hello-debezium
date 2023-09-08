@@ -8,13 +8,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor @AllArgsConstructor
+import java.util.UUID;
+
+@NoArgsConstructor
 @Getter @Setter
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Member {
     @Id
-    private Long id;
+    private String id;
     private String name;
     private int age;
+
+    public Member(String name, int age) {
+        this.id = UUID.randomUUID().toString();
+        this.name = name;
+        this.age = age;
+    }
 }
