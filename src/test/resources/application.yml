@@ -1,7 +1,8 @@
 logging:
   level:
-    root: info
+    root: debug
     com.hello.debezium: debug
+
 
 ---
 spring:
